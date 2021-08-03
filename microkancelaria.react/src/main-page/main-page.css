@@ -1,0 +1,18 @@
+.logo {
+  float: left;
+  width: 208px;
+  height: 64px;
+  /* margin: 16px 24px 16px 0; */
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.logoImage {
+  height:64px;
+  /* background: rgba(255, 255, 255, 0.2); */
+  width: 200px;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+

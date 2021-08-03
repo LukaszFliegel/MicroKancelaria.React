@@ -1,0 +1,36 @@
+@import "~antd/dist/antd.css";
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.site-layout-background {
+  background-color: #fff;
+}
+
+.ant-layout-header {
+  padding: 0;
+}
+
+#root {
+  height: inherit;
+}
+
+section.ant-layout {
+  height: inherit;
+}
+
+tr th.ant-table-cell {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+div.ant-table-title {
+  font-size: x-large;
+}
