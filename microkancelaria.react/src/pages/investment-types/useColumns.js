@@ -1,4 +1,5 @@
 import { Button, Tag, Space, Popconfirm } from 'antd';
+import { Link } from 'react-router-dom';
 
 const useColumns = (handleDelete, handleSetTheDefault) => {
     return [
@@ -39,13 +40,14 @@ const useColumns = (handleDelete, handleSetTheDefault) => {
       {
           title: 'Action',
           key: 'action',
+          width: 1,
           render: (text, record) => (
               <Space size="middle">
-              <Button size="small">
+              {/* <Button size="small">
                 Show
-              </Button>
+              </Button> */}
               <Button size="small">
-                Edit
+                <Link to={`/InvestmentTypes/${record.id}`}>Edit</Link>
               </Button>            
               
               <Popconfirm title="Confirm set the default" onConfirm={() => {

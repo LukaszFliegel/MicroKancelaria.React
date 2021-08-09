@@ -61,7 +61,7 @@ const PageSlider = () => {
           <SubMenu key="dictionaries" title="Dictionaries data">
             <Menu.Item key="bankAccounts" icon={<Bank />}>                
                 <span>Bank Accounts</span>
-                <Link to="/BankAccouns" />
+                <Link to="/BankAccounts" />
             </Menu.Item>
             <Menu.Item key="contractors" icon={<AccountSupervisorOutline />}>                
                 <span>Contractors</span>

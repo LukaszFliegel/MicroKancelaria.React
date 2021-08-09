@@ -16,6 +16,7 @@ import FinancialYearsPage from '../pages/financial-years/financial-years'
 import DashboardPage from '../pages/dashboard/dashboard'
 import PurchaseInvoicesPage from '../pages/purchase-invoices/purchase-invoices'
 import SellInvoicesPage from '../pages/sell-invoices/sell-ivoices'
+import InvestementTypePage from '../pages/investment-types/investement-type'
 
 // import CodeTagsIcon from '@2fd/ant-design-icons/lib/CodeTags'
 // import { DashboardOutlined } from '@ant-design/icons';
@@ -43,31 +44,31 @@ function App() {
           }}
         >
             <Switch>
-              <Route path="/BankAccouns">
+              <Route exact path="/BankAccounts">
                 <BankAccounsPage />
               </Route>
-              <Route path="/Contractors">
+              <Route exact path="/Contractors">
                 <ContractorsPage />
               </Route>              
-              <Route path="/InvestmentTypes">
+              <Route exact exact path="/InvestmentTypes">
                 <InvestementTypesPage />
               </Route>
-              <Route path="/MeasurementUnits">
+              <Route exact path="/MeasurementUnits">
                 <MeasurementUnitsPage />
               </Route>
-              <Route path="/PaymentMethods">
+              <Route exact path="/PaymentMethods">
                 <PaymentMethodsPage />
               </Route>
-              <Route path="/Investments">
+              <Route exact path="/Investments">
                 <InvestmentsPage />
               </Route>
-              <Route path="/Investments">
+              <Route exact path="/Investments">
                 <InvestmentsPage />
               </Route>
-              <Route path="/Firms">
+              <Route exact path="/Firms">
                 <FirmsPage />
               </Route>
-              <Route path="/FinancialYears">
+              <Route exact path="/FinancialYears">
                 <FinancialYearsPage />
               </Route>
               <Route exact path="/PurchaseInvoices">
@@ -75,7 +76,16 @@ function App() {
               </Route>
               <Route exact path="/SellInvoices">
                 <SellInvoicesPage />
+              </Route>      
+
+              
+                      
+              <Route exact path="/InvestmentTypes/:id">
+                <InvestementTypePage />
               </Route>
+
+
+
               <Route exact path="/">
                 <DashboardPage />
               </Route>

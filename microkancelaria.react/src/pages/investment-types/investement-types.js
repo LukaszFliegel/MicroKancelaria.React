@@ -9,7 +9,7 @@ function InvestementTypesPage()
     // const [modelState, setModelState] = useState<IInvestmentTypeDto>();
 
     const fetchInvestmentTypes = () => {
-        fetch("https://localhost:44381/InvestmentTypes")        
+        fetch("https://localhost:44381/api/InvestmentTypes")        
             .then(async response => {
                 var json = await response.json();
                 const investmentTypesModel = json.map((p) => { return {
@@ -37,7 +37,7 @@ function InvestementTypesPage()
             // headers: { 'Content-Type': 'application/json' },
             // body: JSON.stringify({ title: 'React PUT Request Example' })
         };
-        fetch(`https://localhost:44381/InvestmentTypes/${record.id}`, requestOptions)
+        fetch(`https://localhost:44381/api/InvestmentTypes/${record.id}`, requestOptions)
             .then(response => {
                 fetchInvestmentTypes();
                 notification.success({
@@ -59,7 +59,7 @@ function InvestementTypesPage()
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(record),
         };
-        fetch(`https://localhost:44381/InvestmentTypes/${record.id}`, requestOptions)
+        fetch(`https://localhost:44381/api/InvestmentTypes/${record.id}`, requestOptions)
             .then(async response => {
                 if(response.status === 204) {
                     notification.success({
@@ -91,7 +91,7 @@ function InvestementTypesPage()
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(record),
         };
-        fetch(`https://localhost:44381/InvestmentTypes/${record.id}`, requestOptions)
+        fetch(`https://localhost:44381/api/InvestmentTypes/${record.id}`, requestOptions)
             .then(response => {
                 fetchInvestmentTypes();
                 notification.success({
