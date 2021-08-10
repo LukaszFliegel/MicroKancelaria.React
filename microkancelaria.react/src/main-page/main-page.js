@@ -17,6 +17,7 @@ import DashboardPage from '../pages/dashboard/dashboard'
 import PurchaseInvoicesPage from '../pages/purchase-invoices/purchase-invoices'
 import SellInvoicesPage from '../pages/sell-invoices/sell-ivoices'
 import InvestementTypePage from '../pages/investment-types/investement-type'
+import SellInvoicesPaymentsPage from '../pages/sell-invoices-payments/sell-invoices-payments'
 
 // import CodeTagsIcon from '@2fd/ant-design-icons/lib/CodeTags'
 // import { DashboardOutlined } from '@ant-design/icons';
@@ -78,7 +79,9 @@ function App() {
                 <SellInvoicesPage />
               </Route>      
 
-              
+              <Route exact path="/SellInvoice/:id/payments">
+                <SellInvoicesPaymentsPage />
+              </Route>  
                       
               <Route exact path="/InvestmentTypes/:id">
                 <InvestementTypePage />
